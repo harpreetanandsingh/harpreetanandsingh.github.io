@@ -3,6 +3,7 @@
   url: https://github.com/harpreetanandsingh/yield-curve-pca-regimes
 - title: Corporate Loan Pricing with Machine Learning
   summary: Predicts syndicated loan spreads; OLS reaches test RMSE 54 bps and out-of-sample R² 0.48, with contract terms carrying most of the signal.
+  url: https://github.com/harpreetanandsingh/corporate-loan-pricing
 - title: Semantic Peer Firms from 10-K Text
   summary: Peers built from 10-K business descriptions with TF-IDF and BGE embeddings co-move more with the focal firm than industry-and-size peers (correlation 0.151 vs 0.120).
 - title: Stock Market Simulator
