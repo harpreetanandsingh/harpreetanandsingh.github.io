@@ -1,5 +1,6 @@
 - title: Yield Curve PCA & Rate Regimes
   summary: Three PCA factors explain 99.9% of Treasury curve variance (level alone 92.1%); K-means finds four rate regimes, and no model beats a no-change forecast for next-month 10Y moves.
+  url: https://github.com/harpreetanandsingh/yield-curve-pca-regimes
 - title: Corporate Loan Pricing with Machine Learning
   summary: Predicts syndicated loan spreads; OLS reaches test RMSE 54 bps and out-of-sample R² 0.48, with contract terms carrying most of the signal.
 - title: Semantic Peer Firms from 10-K Text
