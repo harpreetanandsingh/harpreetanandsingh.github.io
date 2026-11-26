@@ -1,0 +1,8 @@
+<div class="publication">
+  <span class="venue">{{ include.pub.venue }}</span>
+  <h3>{% if include.pub.url %}<a href="{{ include.pub.url }}">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}</h3>
+  <p class="authors">{{ include.pub.authors }}</p>
+  {% if include.pub.note or include.pub.code %}
+    <p class="meta">{{ include.pub.note }}{% if include.pub.code %} <a href="{{ include.pub.code }}">Code</a>{% endif %}</p>
+  {% endif %}
+</div>

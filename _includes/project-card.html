@@ -1,0 +1,18 @@
+<article class="card">
+  {% if include.project.thumb %}
+    <a class="card-thumb" href="{{ include.project.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ include.project.thumb | relative_url }}" alt="" loading="lazy" width="640" height="360">
+    </a>
+  {% elsif include.project.tile %}
+    <a class="card-tile" href="{{ include.project.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <span class="tile-value">{{ include.project.tile.value }}</span>
+      <span class="tile-label">{{ include.project.tile.label }}</span>
+    </a>
+  {% endif %}
+  <h3><a href="{{ include.project.url | relative_url }}">{{ include.project.title }}</a></h3>
+  {% if include.project.headline %}<p class="headline">{{ include.project.headline }}</p>{% endif %}
+  <p>{{ include.project.summary }}</p>
+  <ul class="tags">
+    {% for t in include.project.tags %}<li>{{ t }}</li>{% endfor %}
+  </ul>
+</article>

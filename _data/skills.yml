@@ -1,0 +1,8 @@
+- group: Programming
+  items: Python, C++, C, Java, SQL, R, Stata
+- group: Libraries
+  items: Pandas, NumPy, scikit-learn, PyTorch, TensorFlow, LangGraph, LangChain, Hugging Face
+- group: AI / ML
+  items: Machine learning, NLP, knowledge graphs, LLM evaluation, agentic AI, RAG
+- group: Quantitative
+  items: Financial modelling, statistical analysis, econometrics, time series, extreme value theory

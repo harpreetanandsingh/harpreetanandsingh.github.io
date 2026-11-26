@@ -1,0 +1,54 @@
+---
+layout: default
+title: Resume
+permalink: /resume/
+---
+<h1>Resume</h1>
+<p class="lede">
+  <a class="button" href="{{ '/assets/Harpreet_Singh_Anand_Resume.pdf' | relative_url }}">Download PDF</a>
+</p>
+
+<section class="resume-section">
+  <h2>Education</h2>
+  {% for e in site.data.education %}
+    <div class="entry">
+      <div class="entry-head"><h3>{{ e.school }}</h3><span class="when">{{ e.dates }}</span></div>
+      <p class="sub">{{ e.degree }} · {{ e.location }}</p>
+      <ul>{% for d in e.details %}<li>{{ d }}</li>{% endfor %}</ul>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="resume-section">
+  <h2>Experience</h2>
+  {% for x in site.data.experience %}
+    <div class="entry">
+      <div class="entry-head"><h3>{{ x.org }}</h3><span class="when">{{ x.dates }}</span></div>
+      <p class="sub">{{ x.role }} · {{ x.location }}</p>
+      <ul>{% for b in x.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="resume-section">
+  <h2>Skills</h2>
+  <dl class="skills">
+    {% for s in site.data.skills %}<dt>{{ s.group }}</dt><dd>{{ s.items }}</dd>{% endfor %}
+  </dl>
+</section>
+
+<section class="resume-section">
+  <h2>Teaching &amp; leadership</h2>
+  {% for a in site.data.activities.leadership %}
+    <div class="entry">
+      <div class="entry-head"><h3>{{ a.role }}</h3><span class="when">{{ a.dates }}</span></div>
+      <p class="sub">{{ a.org }}</p>
+      <ul><li>{{ a.detail }}</li></ul>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="resume-section">
+  <h2>Certifications</h2>
+  <ul>{% for c in site.data.activities.certifications %}<li>{{ c.name }} ({{ c.issuer }})</li>{% endfor %}</ul>
+</section>

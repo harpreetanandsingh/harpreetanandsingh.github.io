@@ -1,0 +1,35 @@
+title: Harpreet Singh Anand
+description: Quantitative finance × machine learning. MS QCF at Georgia Tech.
+url: "https://harpreetanandsingh.github.io"
+baseurl: ""
+author: Harpreet Singh Anand
+lang: en_US
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - docs/
+  - scripts/
+  - Gemfile
+  - Gemfile.lock
+  - .bundle/
+  - vendor/
+  - README.md
+  - LinkedInprofile.pdf
+  - resume_harpreet_nov16.pdf
+  - "Resume_Harpreet_Oct.docx (4).pdf"
+  - linkedin_pic.jpeg

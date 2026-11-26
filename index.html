@@ -1,0 +1,48 @@
+---
+layout: default
+title: Home
+---
+{% assign p = site.data.profile %}
+<section class="hero-wrap">
+  <div class="hero">
+    <div class="hero-id">
+      <img class="headshot" src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="{{ p.name }}" width="88" height="88">
+      <h1>{{ p.name }}</h1>
+    </div>
+    <p class="tagline">{{ p.tagline }}</p>
+    <p class="bio">{{ p.bio }}</p>
+    <ul class="links">
+      {% for l in p.links %}
+        <li><a href="{{ l.url | relative_url }}">{{ l.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% include hero-chart.html %}
+</section>
+
+<section aria-labelledby="highlights-h">
+  <h2 id="highlights-h" class="visually-hidden">Highlights</h2>
+  <ul class="highlights">
+    {% for h in p.highlights %}
+      <li><strong>{{ h.title }}</strong><span>{{ h.detail }}</span></li>
+    {% endfor %}
+  </ul>
+  <ul class="ticker" aria-label="Selected results">
+    {% for t in p.ticker %}
+      <li>{{ t.name }} <b>{{ t.value }}</b></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="featured-h">
+  <div class="section-head">
+    <h2 id="featured-h">Featured projects</h2>
+    <a href="{{ '/projects/' | relative_url }}">All projects →</a>
+  </div>
+  <div class="cards cards-2">
+    {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+    {% for project in featured %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,22 @@
+- title: "KG-MuLQA: A Framework for KG-based Multi-Level QA Extraction and Long-Context LLM Evaluation"
+  authors: "N. Tatarinov, V. Kannan, H. Srinivasa, A. Raj, <strong>H. S. Anand</strong>, V. Singh, et al., S. Chava"
+  venue: ACL 2026
+  year: 2026
+  note: Main Conference. Earlier version on arXiv as KG-QAGen (2505.12495).
+  url: https://aclanthology.org/2026.acl-long.151/
+- title: "Empowering Low-Resource Language Translation: Methodologies for Bhojpuri-Hindi and Marathi-Hindi ASR and MT"
+  authors: "<strong>H. S. Anand</strong>, A. R. Dash, Y. Sharma"
+  venue: IWSLT 2024
+  year: 2024
+  note: Proceedings of the 21st International Conference on Spoken Language Translation, pp. 229–234, Bangkok.
+  url: https://aclanthology.org/2024.iwslt-1.28/
+- title: "Fine-tuning based Domain Adaptation for Machine Translation of Low-Resource Indic Languages"
+  authors: "A. R. Dash, <strong>H. S. Anand</strong>, Y. Sharma"
+  venue: FIRE 2023
+  year: 2023
+  note: Forum for Information Retrieval Evaluation (CEUR-WS).
+  code: https://github.com/harpreetanandsingh/MTIL_FIRE_BITSP
+- title: "Sentiment-Aware Machine Translation for Indic Languages"
+  authors: "A. R. Dash, <strong>H. S. Anand</strong>, Y. Sharma"
+  venue: Paper
+  year: ""

@@ -1,0 +1,18 @@
+leadership:
+  - role: Teaching Assistant, CS F241 Microprocessors and Interfacing
+    org: BITS Pilani
+    dates: Jan 2024 – May 2024
+    detail: Assisted students in lab sessions on x86 assembly programming.
+  - role: Peer Mentor
+    org: Peer Mentorship Programme, BITS Pilani
+    dates: Jan 2023 – Jan 2024
+    detail: Mentored eight junior students on academics and campus life.
+  - role: Back-End Developer
+    org: Coding Club, BITS Pilani
+    dates: Feb 2022 – Jan 2024
+    detail: Back-end development for Coding Club projects.
+certifications:
+  - name: "Supervised Machine Learning: Regression and Classification"
+    issuer: Coursera
+  - name: Neural Networks and Deep Learning
+    issuer: Coursera

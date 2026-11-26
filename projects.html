@@ -1,0 +1,24 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+<h1>Projects</h1>
+<p class="lede">Machine learning and empirical work on asset pricing, credit and tail risk, rates and financial text.</p>
+
+<div class="cards">
+  {% assign projects = site.projects | sort: "order" %}
+  {% for project in projects %}
+    {% include project-card.html project=project %}
+  {% endfor %}
+</div>
+
+<h2>Other projects</h2>
+<ul class="other-projects">
+  {% for p in site.data.other_projects %}
+    <li>
+      <strong>{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</strong>
+      {{ p.summary }}
+    </li>
+  {% endfor %}
+</ul>

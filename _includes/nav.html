@@ -1,0 +1,23 @@
+<header class="site-header">
+  <nav class="site-nav wrap" aria-label="Main">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.data.profile.name }}</a>
+    <ul>
+      {% assign items = "Home|/,Projects|/projects/,Research|/research/,Resume|/resume/" | split: "," %}
+      {% for item in items %}
+        {% assign parts = item | split: "|" %}
+        {% assign href = parts[1] %}
+        {% if href == "/" %}
+          {% if page.url == "/" %}{% assign active = true %}{% else %}{% assign active = false %}{% endif %}
+        {% else %}
+          {% assign prefix = page.url | slice: 0, href.size %}
+          {% if prefix == href %}{% assign active = true %}{% else %}{% assign active = false %}{% endif %}
+        {% endif %}
+        <li><a href="{{ href | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ parts[0] }}</a></li>
+      {% endfor %}
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme" aria-pressed="false">◐</button>
+      <a class="button button-small" href="{{ '/assets/Harpreet_Singh_Anand_Resume.pdf' | relative_url }}">CV ↓</a>
+    </div>
+  </nav>
+</header>

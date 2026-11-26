@@ -1,0 +1,32 @@
+- org: Commonwealth Bank of Australia
+  role: Graduate Data Scientist
+  location: Bengaluru, India
+  dates: Aug 2025 – Jul 2026
+  bullets:
+    - Built an entity-resolution framework linking ~160K configuration items to GitHub repositories and Jira projects across incident, change and engineering datasets.
+    - Benchmarked fuzzy matching, embedding similarity and weighted ranking against ~2K ground-truth mappings, raising GitHub linkage coverage from 23% to 35% and reaching ~70% Jira coverage.
+    - Built a multi-agent banking assistant with vulnerability detection and context-aware responses over transaction histories, evaluated for safety, tone and completeness with LLM-as-a-judge.
+    - Co-developed a LangGraph banking chatbot with supervisor orchestration, RAG and agent-level guardrails, evaluated with RAGAS; won an internal hackathon among 6 teams.
+- org: Georgia Tech Financial Services Innovation Lab
+  role: Research Intern
+  location: Remote
+  dates: May 2024 – Apr 2025
+  bullets:
+    - Built a financial-document QA benchmark of 20,139 pairs across 170 SEC credit agreements (14.2M+ tokens) using RDF knowledge graphs and SPARQL.
+    - Ran multi-stage annotation and QA quality control, reaching 80.76% inter-annotator agreement (Cohen's κ).
+    - Benchmarked 16 LLMs and validated automatic metrics against 100 human evaluations; published at ACL 2026.
+- org: Telus Digital
+  role: Machine Learning Intern
+  location: Bengaluru, India
+  dates: Jul 2024 – Dec 2024
+  bullets:
+    - Designed a data-processing pipeline for 1M+ records with 82% structured accuracy, 28% above a rule-based baseline.
+    - Benchmarked and optimized API endpoints for high-concurrency, low-latency production workloads.
+    - Built automated evaluation systems that removed 90% of manual review hours and cut operational costs by 35%.
+- org: North Eastern Space Applications Centre
+  role: Research Intern
+  location: Umiam, India
+  dates: May 2023 – Jul 2023
+  bullets:
+    - Multi-class semantic segmentation of UAV and Sentinel-2 imagery with zero-shot learning.
+    - Used Meta's Segment Anything Model and merged per-class masks into a single multi-class map.

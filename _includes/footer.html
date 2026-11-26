@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© {{ site.time | date: "%Y" }} {{ site.data.profile.name }}</p>
+    <ul class="links">
+      {% for l in site.data.profile.links %}
+        <li><a href="{{ l.url | relative_url }}">{{ l.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</footer>

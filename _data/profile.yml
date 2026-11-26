@@ -1,0 +1,47 @@
+name: Harpreet Singh Anand
+tagline: Quantitative finance × machine learning
+bio: >-
+  I'm an MS student in Quantitative and Computational Finance at Georgia Tech,
+  drawn to how markets behave when things go wrong: fat tails, regime shifts
+  and the risks that standard models understate. Much of my work asks when
+  machine learning genuinely beats classical estimators out of sample, and how
+  to get reliable, verifiable answers from long financial text with LLMs, which
+  led to an ACL 2026 benchmark on SEC credit agreements. Next, I want to bring
+  causal inference and uncertainty quantification into quant finance, so that
+  models say not just what they predict but why, and how confident they should
+  be. Before Georgia Tech, I was a Graduate Data Scientist at Commonwealth Bank
+  of Australia.
+email: hanand35@gatech.edu
+links:
+  - label: Email
+    url: mailto:hanand35@gatech.edu
+  - label: GitHub
+    url: https://github.com/harpreetanandsingh
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/harpreet-singh-anand-a14647223/
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=KXlLLuYAAAAJ&hl=en
+  - label: Resume (PDF)
+    url: /assets/Harpreet_Singh_Anand_Resume.pdf
+highlights:
+  - title: ACL 2026
+    detail: Main-conference paper on KG-based QA and long-context LLM evaluation
+  - title: Commonwealth Bank
+    detail: Graduate Data Scientist, entity resolution and agentic AI
+  - title: Georgia Tech FSIL
+    detail: Research on LLMs over 170 SEC credit agreements
+  - title: GRE Quant 170/170
+    detail: MS QCF, Georgia Tech, expected Dec 2027
+ticker:
+  - name: Beta forecast
+    value: "−30% MSE"
+  - name: Default model
+    value: "AUC 0.740"
+  - name: Tail shape
+    value: "ξ 0.14"
+  - name: Event study
+    value: "221 FOMC"
+  - name: Financial RAG
+    value: "94% correct"
+  - name: KG-QA
+    value: "16 LLMs"
