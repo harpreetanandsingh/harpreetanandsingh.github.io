@@ -37,8 +37,8 @@ ticker:
     value: "−30% MSE"
   - name: Default model
     value: "AUC 0.740"
-  - name: Tail shape
-    value: "ξ 0.14"
+  - name: Yield curve
+    value: "PC1 92.1%"
   - name: Event study
     value: "221 FOMC"
   - name: Financial RAG

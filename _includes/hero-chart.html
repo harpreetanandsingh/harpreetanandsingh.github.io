@@ -1,8 +1,8 @@
 {% assign c = site.data.hero_tail %}
 <figure class="hero-figure">
   <svg class="hero-chart" viewBox="0 0 {{ c.width }} {{ c.height }}" role="img" aria-labelledby="hc-title hc-desc">
-    <title id="hc-title">Fat tails in monthly stock returns</title>
-    <desc id="hc-desc">Probability that a monthly stock return exceeds a given size in absolute value, on a log scale, for {{ c.firm_months }} firm-months, compared with a Normal distribution with the same mean and standard deviation. Large moves are far more frequent than the Normal predicts.</desc>
+    <title id="hc-title">Fat tails in daily US stock returns</title>
+    <desc id="hc-desc">Probability that a daily US stock return exceeds a given size in absolute value, on a log scale, for {{ c.observations }} CRSP stock-days from {{ c.years }}, compared with a Normal distribution with the same mean and standard deviation. Large moves are far more frequent than the Normal predicts.</desc>
     {% for t in c.yticks %}
       <line class="grid" x1="{{ c.plot.left }}" x2="{{ c.plot.right }}" y1="{{ t.y }}" y2="{{ t.y }}"/>
       <text class="tick" x="{{ c.plot.left | minus: 4 }}" y="{{ t.y | plus: 3 }}" text-anchor="end">10<tspan dy="-4" font-size="7">{{ t.label | remove: "10^" }}</tspan></text>
@@ -16,7 +16,7 @@
     <text class="legend" x="221" y="25">Stock returns</text>
     <line class="normal" x1="196" x2="216" y1="38" y2="38"/>
     <text class="legend" x="221" y="41">Normal</text>
-    <text class="tick" x="{{ c.plot.right }}" y="{{ c.height | minus: 1 }}" text-anchor="end">|monthly return| &gt; x</text>
+    <text class="tick" x="{{ c.plot.right }}" y="{{ c.height | minus: 1 }}" text-anchor="end">|daily return| &gt; x</text>
   </svg>
-  <figcaption>How often stocks make big monthly moves vs. a Normal, 1997–2023 ({{ c.firm_months }} firm-months). <a href="{{ '/projects/tail-risk/' | relative_url }}">Tail-risk project →</a></figcaption>
+  <figcaption>How often US stocks make big daily moves vs. a Normal: CRSP, {{ c.years }}, {{ c.observations }} stock-days. <a href="{{ '/projects/tail-risk/' | relative_url }}">Tail-risk project →</a></figcaption>
 </figure>

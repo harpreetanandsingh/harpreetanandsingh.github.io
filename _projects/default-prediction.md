@@ -12,7 +12,7 @@ results:
   - value: "38.7%"
     label: Defaults captured in riskiest 10% of firms
   - value: "0.77%"
-    label: Base default rate across 78,682 firm-years
+    label: Base default rate, 78,682 firm-years (simulated panel)
   - value: "6"
     label: Models compared, from logit to gradient boosting
 ---
@@ -23,7 +23,7 @@ Which firms will default next year, and how well can firm ratios and market sign
 
 ## Data
 
-78,682 firm-years with 609 next-year defaults (0.77%). The data were split in time: training on fiscal 1999–2011, model choices on 2012–2014 validation, and a single final evaluation on 2015–2018 (12,282 firm-years, 119 defaults).
+An anonymized panel of 8,262 firms and 78,682 firm-years, **simulated to reproduce the structure of a corporate-bankruptcy prediction problem** (ratios, market signals, rare defaults and stress years) rather than raw Compustat or CRSP data. It contains 609 next-year defaults (0.77%). The data were split in time: training on fiscal 1999–2011, model choices on 2012–2014 validation, and a single final evaluation on 2015–2018 (12,282 firm-years, 119 defaults).
 
 ## Method
 

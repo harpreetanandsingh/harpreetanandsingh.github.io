@@ -1,6 +1,6 @@
 ---
 title: Extreme Equity Returns, Tail Risk & Market Regimes
-summary: How often stocks make extreme moves, how those moves cluster across firms and regimes, and whether they can be detected or predicted.
+summary: Defining, clustering and predicting extreme stock moves in a 240-firm panel built to match the statistical features of US equity returns.
 headline: "2.6× jump rate in recessions"
 tags: [Tail Risk, Extreme Value Theory, Anomaly Detection]
 featured: true
@@ -8,7 +8,7 @@ order: 2
 thumb: /assets/img/projects/tail-risk/thumb.png
 results:
   - value: "77K+"
-    label: Firm-months across 240 firms
+    label: Firm-months, 240 anonymized firms (simulated panel)
   - value: "ξ = 0.14"
     label: GPD tail shape; excess kurtosis 6.5
   - value: "2.6×"
@@ -19,11 +19,11 @@ results:
 
 ## Question
 
-How heavy are the tails of monthly equity returns, what counts as an "extreme" move, and can extreme moves be detected in the same month or predicted a month ahead?
+On a panel built to behave like monthly US equity returns: how heavy are the tails, what should count as an "extreme" move, and can extreme moves be detected in the same month or predicted a month ahead?
 
 ## Data
 
-Monthly returns for 240 firms (77K+ firm-months) with market returns and macro regime labels. Data were split in time into training, validation and a 2019–2023 test period that includes COVID and the 2022 rate shock.
+An anonymized panel of 240 firms and 77,520 firm-months (1997–2023), **simulated to reproduce the statistical features of US equity returns** (heavy tails, volatility clustering, stress-period clustering and cross-sectional differences) rather than raw CRSP data. It comes with matching market and macro regime proxies, including stress windows modelled on the dot-com bust, 2008, COVID and 2022. The data were split in time into training, validation and a 2019–2023 test period. Because the panel is simulated, the findings below describe the methods' behaviour on realistic data, not new facts about the US market.
 
 ## Method
 
@@ -38,7 +38,7 @@ Monthly returns for 240 firms (77K+ firm-months) with market returns and macro r
 - The definition matters: the fixed 10% rule mostly flags volatile industries and market-wide months. Firm-relative and volatility-scaled rules give similar rates across industries.
 - Extreme events cluster: 2.6× the normal rate in recessions, 1.4× more likely after a firm's own jump, and the market-wide jump fraction stays autocorrelated for six months.
 - Isolation Forest is an excellent *same-month* detector (ROC-AUC 0.93) but the weakest *next-month* forecaster (0.58). The best forward model, a small logistic regression, reaches 0.66 and captures 19% of next-month jumps in its top decile.
-- COVID was a synchronized downside crash (8 negative jumps per positive one) in which every backward-looking forecast ranked months the wrong way.
+- In the COVID-style stress window, extreme moves were a synchronized downside crash (8 negative jumps per positive one), and every backward-looking forecast ranked those months the wrong way. That is a useful stress test for any jump model.
 
 <figure>
   <img src="{{ '/assets/img/projects/tail-risk/tails.png' | relative_url }}" alt="Return distribution tails compared with a Normal distribution and the fitted GPD">
