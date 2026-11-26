@@ -6,6 +6,7 @@ tags: [Credit Risk, Classification, Calibration]
 featured: true
 order: 3
 thumb: /assets/img/projects/default-prediction/thumb.png
+repo: https://github.com/harpreetanandsingh/corporate-default-prediction
 results:
   - value: "0.740"
     label: Test ROC-AUC (LASSO logit), KS 0.404
