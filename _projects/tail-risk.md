@@ -6,6 +6,7 @@ tags: [Tail Risk, Extreme Value Theory, Anomaly Detection]
 featured: true
 order: 2
 thumb: /assets/img/projects/tail-risk/thumb.png
+repo: https://github.com/harpreetanandsingh/equity-tail-risk-regimes
 results:
   - value: "77K+"
     label: Firm-months, 240 anonymized firms (simulated panel)
