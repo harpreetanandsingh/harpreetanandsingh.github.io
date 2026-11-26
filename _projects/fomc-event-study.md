@@ -6,6 +6,7 @@ tags: [Event Study, Monetary Policy, Empirical Finance]
 featured: false
 order: 4
 thumb: /assets/img/projects/fomc-event-study/thumb.png
+repo: https://github.com/harpreetanandsingh/fomc-policy-surprise-event-study
 results:
   - value: "221"
     label: FOMC announcements, 1995–2022
