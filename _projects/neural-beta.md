@@ -6,6 +6,7 @@ tags: [Asset Pricing, Deep Learning, Forecasting]
 featured: true
 order: 1
 thumb: /assets/img/projects/neural-beta/thumb.png
+repo: https://github.com/harpreetanandsingh/neural-beta-forecasting
 results:
   - value: "−30%"
     label: MSE vs. trailing daily beta (Newey–West t = 9.4)
